@@ -1,0 +1,64 @@
+header{
+    text-align: center;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+hr{
+    max-height: 5px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(128, 0, 128);
+    border-right-color: rgb(128, 0, 128);
+    border-bottom-color: rgb(128, 0, 128);
+    border-left-color: rgb(128, 0, 128);
+    background-color: rgb(128, 0, 128);
+    width: 100%;
+    position: relative;
+}
+
+.missiontext{
+    text-align: center;
+    position: relative;
+    left: 5%;
+    background-color: white;
+    display: inline-block;
+    padding: 100px;
+    max-width: 40%;
+ }
+
+.storytext{
+    text-align: center;
+    position: relative;
+    left: 55%;
+    background-color: white;
+    display: block;
+    padding: 100px;
+    max-width: 40%;
+}
+
+.stafftext{
+    text-align: center;
+    position: relative;
+    left: 5%;
+    background-color: white;
+    display: block;
+    padding: 100px;
+    max-width: 40%;
+}
+
+.image-1{
+    position: relative;
+    display: inline-block;
+    border: solid 5px purple;
+    width: 30%;
+    margin-left: 25%;
+}
+
+footer{
+    text-align: center;
+}
