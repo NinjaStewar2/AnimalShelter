@@ -6,6 +6,7 @@ body{
 
     background-color: whitesmoke;
     width: 100%;
+    text-align: center;
 }
 
 hr{
@@ -24,6 +25,7 @@ hr{
 }
 section{
     margin-bottom: 50px;
+    display: inline-block;
 }
 
 .mission > article,
