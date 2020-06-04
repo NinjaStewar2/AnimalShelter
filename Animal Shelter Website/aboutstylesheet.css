@@ -3,7 +3,9 @@ header{
 }
 
 body{
+
     background-color: whitesmoke;
+    width: 100%;
 }
 
 hr{
@@ -20,45 +22,65 @@ hr{
     width: 100%;
     position: relative;
 }
-
-.missiontext{
-    text-align: center;
-    position: relative;
-    left: 5%;
-    background-color: white;
-    display: inline-block;
-    padding: 100px;
-    max-width: 40%;
- }
-
-.storytext{
-    text-align: center;
-    position: relative;
-    left: 55%;
-    background-color: white;
-    display: block;
-    padding: 100px;
-    max-width: 40%;
+section{
+    margin-bottom: 50px;
 }
 
-.stafftext{
-    text-align: center;
-    position: relative;
-    left: 5%;
-    background-color: white;
-    display: block;
-    padding: 100px;
-    max-width: 40%;
+.mission > article,
+.story > article, 
+.staff > article {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
-.image-1{
-    position: relative;
-    display: inline-block;
-    border: solid 5px purple;
-    width: 30%;
-    margin-left: 25%;
+.mission .missiontext,
+.story .storytext,
+.staff .stafftext {
+    background: white;
+    padding: 2rem 4rem;
+    margin: 0;
+    flex-basis: 47.5%;
+    box-sizing: border-box;
+    height: auto;
 }
 
-footer{
+.image {
+    /* width: 100%;
+    height: 100%; */
+    flex-basis: 47.5%;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+footer {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .mission > article,
+    .staff > article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .story > article{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .image{
+        flex-basis: 100%;
+    }
+
+    .mission .missiontext,
+    .story .storytext,
+    .staff .stafftext {
+        flex-basis: 100%;
+    }
 }
