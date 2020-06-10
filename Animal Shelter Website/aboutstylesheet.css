@@ -1,98 +1,81 @@
-header{
+body{
+    background: whitesmoke;
+}
+
+h1{
     text-align: center;
 }
 
-body{
-    background-image: url("https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
-    background-color: #964b19;
-    background-size: 160%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    text-align: center;
-    background-position: center;
+article{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    margin-bottom: 2.5em;
 }
 
 hr{
-    max-height: 5px;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-top-color: rgb(128, 0, 128);
-    border-right-color: rgb(128, 0, 128);
-    border-bottom-color: rgb(128, 0, 128);
-    border-left-color: rgb(128, 0, 128);
-    background-color: rgb(128, 0, 128);
-    width: 100%;
+    border: solid purple .01em;
+    width: 50%;
+    margin-left: 25%;
     position: relative;
 }
-section{
-    margin-bottom: 50px;
-    display: inline-block;
-}
 
-.mission > article,
-.story > article, 
-.staff > article {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-}
-
-.mission .missiontext,
-.story .storytext,
-.staff .stafftext {
-    background: white;
-    padding: 2rem 4rem;
-    margin: 0;
-    /* flex-basis: 47.5%; */
-    box-sizing: border-box;
-    max-height: 950px;
-}
-
-/* .image {
+.missiontext,
+.storytext,
+.stafftext{
     flex-basis: 47.5%;
+    display: inline-block;
+    background: white;
+    box-shadow: lightgray .2em .2em;
     box-sizing: border-box;
-    padding: 0;
 }
 
-figure {
+p{
+    margin: .5em;
+    text-indent: 1em;
+}
+
+figure{
     margin: 0;
-} */
-
-footer {
-    text-align: center;
+    flex-basis: 47.5%;
 }
-/* 
-@media (max-width: 920px) {
-    section{
-        display: flex;
+
+img{
+    display: inline-block;
+    border: solid purple 0.5em;
+    box-shadow: lightgray .2em .2em;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px){
+
+    body{
+        max-width: 500px;
+        margin: auto;
     }
-    .mission > article,
-    .staff > article {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
+    .container{
+        margin: 0;
     }
 
-    .story > article{
+    .story .container{
         display: flex;
         flex-direction: column-reverse;
-        flex: 1;
     }
 
-    .image{
-        margin: auto;
-        flex: 1;
-        width: 100%;
-        height: auto;
+    article{
+        display: block;
     }
 
-    .mission .missiontext,
-    .story .storytext,
-    .staff .stafftext {
-        flex: 1;
-        margin: auto;
+    .missiontext,
+    .storytext,
+    .stafftext{
+        margin-bottom: 2.5em;
     }
-} */
+
+    figure{
+        margin-bottom: 2.5em;
+    }
+
+}
