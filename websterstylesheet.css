@@ -1,0 +1,122 @@
+/* Mobile First Media Queries */
+
+/* Base Styles */
+.nav-bg{
+  background-image: url('https://images.unsplash.com/photo-1559293851-bdf02a292cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain;
+  background-position-y: 8.5em;
+  margin: 0 0 -2em 0;
+  padding: 0 0 15em 0;
+  text-align: center;
+}
+
+.logo{
+  font-size: 9vw;
+  text-align: justify;
+  padding: .5em;
+  border-bottom: solid navy .05em;
+}
+
+h3{
+  text-align: center;
+  color: navy;
+  padding-top: 1em;
+  margin: 0;
+}
+
+.mobile-nav{
+  background: whitesmoke;
+  width: 100%;
+}
+
+nav{
+  display: inline-block;
+}
+
+.nav-container{
+  width: 100%;
+  background: whitesmoke;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: navy;
+}
+
+ul{
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: .5em
+}
+
+li{
+  list-style-type: none;
+  display: inline-block;
+  margin: .25em auto;
+  padding: .25em;
+  border: solid navy .01em;
+  border-radius: .5em;
+  background: white;
+}
+
+.row{
+  background: whitesmoke;
+  margin: 0;
+  width: 100%;
+}
+
+p{
+  padding: 1em;
+}
+
+.welcome-container{
+  background-image: url('https://images.unsplash.com/photo-1544355833-54976fb4fa03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain;
+  background-position-y: 12em;
+  padding: 0 5% 12em 5%;
+}
+
+.main-nav{
+  display: none;
+}
+
+@media (max-width: 375px) {
+  ul{
+    width: 80%;
+  }
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) { 
+  body{
+    border: none;
+  }
+
+  .main-nav{
+    display: block;
+  }
+
+  .mobile-nav{
+    display: none;
+  }
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+  body{
+    border: none;
+  }
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) { 
+  body{
+    border: none;
+  }
+}
