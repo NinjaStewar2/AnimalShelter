@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.0/milligram.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Webster Animal Shelter</title>
+</head>
+<!-- Navbar -->
+<div class="nav-bg">
+  <nav class="nav-container">
+    <div class="logo-container">
+      <h1 class="logo"><a href="{% url 'home' %}">Webster Animal Shelter</a></h1>
+    </div>
+    <ul class="main-nav">
+      <li class="main-nav__item"><a href="{% url 'about' %}">About</a></li>
+      <li class="main-nav__item"><a href="{% url 'adopt' %}">Adopt</a></li>
+      <li class="main-nav__item"><a href="{% url 'contact' %}">Contact</a></li>
+      <li class="main-nav__item"><a href="{% url 'volunteer' %}">Get Involved</a></li>
+      <li class="main-nav__item"><a href="{% url 'events' %}">Events</a></li>
+      <li class="main-nav__item"><a href="{% url 'donate' %}">Donate</a></li>
+    </ul>
+  </nav>
+  
+  <nav class="mobile-nav">
+    <ul class="menu">
+      <li class="menu-item"><a href="{% url 'about' %}" class="menu__link">About</a></li>
+      <li class="menu-item"><a href="{% url 'adopt' %}" class="menu__link">Adopt</a></li>
+      <li class="menu-item"><a href="{% url 'contact' %}" class="menu__link">Contact</a></li>
+      <li class="menu-item"><a href="{% url 'volunteer' %}" class="menu__link">Get Involved</a></li>
+      <li class="menu-item"><a href="{% url 'events' %}" class="menu__link">Events</a></li>
+      <li class="menu-item"><a href="{% url 'donate' %}" class="menu__link">Donate</a></li>
+    </ul>
+  </nav>
+</div>
+<!-- End Navbar -->
+
+<body>
+  <div class="welcome-container">
+    <div class="row welcome">
+      <div class="column">
+        <h3>Welcome!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat sunt officia aperiam necessitatibus, excepturi optio quibusdam sit quis omnis repudiandae?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column column-50">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="column column-50">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+</body>
+
+</html>
